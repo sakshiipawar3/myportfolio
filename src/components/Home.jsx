@@ -8,12 +8,19 @@ const Home = () => {
       id="home"
       className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-purple-700 to-pink-600 text-white text-center px-4"
     >
-      {/* Profile Image */}
-      <img
-        src={profilePic}
-        alt="Portfolio"
-        className="w-40 h-40 rounded-full mb-6 border-4 border-white shadow-lg object-cover"
-      />
+      {/* Profile Picture with Colorful Circle */}
+      <div className="relative w-44 h-44 mb-6">
+        {/* Colorful Circle Animation */}
+        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-400 animate-spin-slow p-1">
+          <div className="bg-white rounded-full w-full h-full flex items-center justify-center">
+            <img
+              src={profilePic}
+              alt="Portfolio"
+              className="w-40 h-40 rounded-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
 
       {/* Title */}
       <h1 className="text-5xl font-extrabold mb-4">Hi, I'm Pawar Sakshi</h1>
