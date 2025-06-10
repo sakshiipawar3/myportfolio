@@ -1,64 +1,46 @@
 import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import profilePic from '../assets/profile.jpg';
+import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-purple-700 to-pink-600 text-white text-center px-4"
+      className="min-h-screen flex flex-col md:flex-row items-center justify-center text-white px-6"
+      style={{
+        background: 'linear-gradient(to right, #00FF7F, #00FA9A)', // gradient green background
+      }}
     >
-      {/* Profile Picture with Colorful Circle */}
-      <div className="relative w-44 h-44 mb-6">
-        {/* Colorful Circle Animation */}
-        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-400 animate-spin-slow p-1">
-          <div className="bg-white rounded-full w-full h-full flex items-center justify-center">
-            <img
-              src={profilePic}
-              alt="Portfolio"
-              className="w-40 h-40 rounded-full object-cover"
-            />
-          </div>
+      {/* Left Circle Image Placeholder */}
+      <div className="w-64 h-64 bg-transparent border-[10px] border-gray-900 rounded-full shadow-2xl m-6"></div>
+
+      {/* Right Content */}
+      <div className="text-center md:text-left max-w-xl">
+        <p className="text-black text-lg font-medium mb-2">
+          Hi I'm <span className="text-purple-700 font-semibold">Web Developer</span>
+        </p>
+        <h1 className="text-5xl font-bold text-pink-600 mb-4">Sakshi Salunkhe</h1>
+        <p className="text-black mb-6">
+          I can provide clean code and pixel perfect design. I also make the website more & more interactive
+          with web animations. A responsive design makes your website accessible to all users, regardless of their device.
+        </p>
+
+        {/* Buttons */}
+        <div className="flex gap-4 justify-center md:justify-start mb-4">
+          <button className="bg-purple-900 text-white px-5 py-2 rounded-full shadow-md hover:scale-105 transition">
+            download cv
+          </button>
+          <button className="bg-black text-white px-5 py-2 rounded-full shadow-md hover:scale-105 transition">
+            Contact
+          </button>
+        </div>
+
+        {/* Social Icons */}
+        <div className="flex gap-4 justify-center md:justify-start">
+          <FaFacebook className="text-black text-xl hover:text-blue-600 transition" />
+          <FaInstagram className="text-black text-xl hover:text-pink-500 transition" />
+          <FaLinkedin className="text-black text-xl hover:text-blue-700 transition" />
         </div>
       </div>
-
-      {/* Title */}
-      <h1 className="text-5xl font-extrabold mb-4">Hi, I'm Pawar Sakshi</h1>
-
-      {/* Description */}
-      <p className="text-xl max-w-xl mb-6">
-        I'm a Frontend Developer specialized in React, Vite, Tailwind CSS and creating responsive, animated websites.
-      </p>
-
-      {/* Social Icons */}
-      <div className="flex space-x-6 text-3xl mb-6">
-        <a
-          href="https://www.linkedin.com/feed"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-gray-300 transition duration-300"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://github.com/sakshiipawar3"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-gray-300 transition duration-300"
-        >
-          <FaGithub />
-        </a>
-      </div>
-
-      {/* Resume Button */}
-      <a
-        href="/resume.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-white text-purple-700 px-6 py-2 rounded-full font-semibold shadow-md hover:bg-gray-100 transition duration-300 mb-6"
-      >
-        Resume
-      </a>
     </section>
   );
 };
