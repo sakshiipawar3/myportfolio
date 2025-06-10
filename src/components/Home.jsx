@@ -31,11 +31,13 @@ const Home = () => {
         <div className="flex gap-4 justify-center md:justify-start mb-4">
           <a
             href="/resume.pdf"
-            download
-            className="bg-purple-800 text-white px-5 py-2 rounded-full shadow-md hover:scale-105 transition"
-          >
-            Download CV
-          </a>
+             target="_blank"
+           rel="noopener noreferrer"
+           className="bg-purple-800 text-white px-5 py-2 rounded-full shadow-md hover:scale-105 transition"
+         >
+             View CV
+        </a>
+
           <a
             href="#contact"
             className="bg-black text-white px-5 py-2 rounded-full shadow-md hover:scale-105 transition"
@@ -45,14 +47,12 @@ const Home = () => {
         </div>
 
         {/* Social Icons */}
-        <div className="flex gap-4 justify-center md:justify-start text-black text-2xl">
+        <div className="flex gap-3 justify-center md:justify-start text-black text-2xl">
           <a href="https://github.com/sakshiipawar3" target="_blank" rel="noreferrer">
             <FaGithub className="hover:text-gray-800 transition" />
           </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-            <FaInstagram className="hover:text-pink-500 transition" />
-          </a>
-          <a href="https://www.linkedin.com/feed" target="_blank" rel="noreferrer">
+
+          <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer">
             <FaLinkedin className="hover:text-blue-700 transition" />
           </a>
         </div>
