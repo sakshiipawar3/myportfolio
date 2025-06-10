@@ -16,12 +16,15 @@ const Home = () => {
       {/* Right Content */}
       <div className="text-center md:text-left max-w-xl">
         <p className="text-black text-lg font-medium mb-2">
-          Hi I'm <span className="text-purple-700 font-semibold">Web Developer</span>
+          Hi I'm <span className="text-purple-700 font-semibold">frontend Developer</span>
         </p>
         <h1 className="text-5xl font-bold text-pink-600 mb-4">Sakshi pawar</h1>
         <p className="text-black mb-6">
-          I can provide clean code and pixel perfect design. I also make the website more & more interactive
-          with web animations. A responsive design makes your website accessible to all users, regardless of their device.
+           Hi, I'm Sakshi Pawar — a Frontend Developer.
+I create responsive, user-friendly web interfaces using React, Vite, and Tailwind CSS.
+I focus on clean code, smooth animations, and modern design that works on every device.
+
+
         </p>
 
         {/* Buttons */}
