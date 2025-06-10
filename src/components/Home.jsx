@@ -5,12 +5,12 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col md:flex-row items-center justify-center text-white px-6"
+      className="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 text-white"
       style={{
-        background: 'linear-gradient(to right, #00FF7F, #00FA9A)', // gradient green background
+        background: 'linear-gradient(to right, #00FF7F, #00FA9A)', // Bright green gradient
       }}
     >
-      {/* Left Circle Image Placeholder */}
+      {/* Left Circle Placeholder */}
       <div className="w-64 h-64 bg-transparent border-[10px] border-gray-900 rounded-full shadow-2xl m-6"></div>
 
       {/* Right Content */}
@@ -18,13 +18,9 @@ const Home = () => {
         <p className="text-black text-lg font-medium mb-2">
           Hi I'm <span className="text-purple-700 font-semibold">frontend Developer</span>
         </p>
-        <h1 className="text-5xl font-bold text-pink-600 mb-4">Sakshi pawar</h1>
+        <h1 className="text-5xl font-bold text-pink-600 mb-4">Sakshi Pawar</h1>
         <p className="text-black mb-6">
-           Hi, I'm Sakshi Pawar — a Frontend Developer.
-I create responsive, user-friendly web interfaces using React, Vite, and Tailwind CSS.
-I focus on clean code, smooth animations, and modern design that works on every device.
-
-
+          I’m a Frontend Developer. I create responsive, user-friendly web interfaces using React, Vite, and Tailwind CSS. I focus on clean code, smooth animations, and modern design that works on every device.
         </p>
 
         {/* Buttons */}
