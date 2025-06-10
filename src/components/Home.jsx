@@ -18,7 +18,7 @@ const Home = () => {
         <p className="text-black text-lg font-medium mb-2">
           Hi I'm <span className="text-purple-700 font-semibold">Web Developer</span>
         </p>
-        <h1 className="text-5xl font-bold text-pink-600 mb-4">Sakshi Salunkhe</h1>
+        <h1 className="text-5xl font-bold text-pink-600 mb-4">Sakshi pawar</h1>
         <p className="text-black mb-6">
           I can provide clean code and pixel perfect design. I also make the website more & more interactive
           with web animations. A responsive design makes your website accessible to all users, regardless of their device.
