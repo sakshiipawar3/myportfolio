@@ -1,6 +1,9 @@
+
 import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaChevronDown } from 'react-icons/fa';
-import Typewriter from 'typewriter-effect';
+
+import { Typewriter } from 'react-simple-typewriter';
+
 import { motion } from 'framer-motion';
 
 const Home = () => {

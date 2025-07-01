@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+// ✅ Keep ONLY this import in both files:
 import { Typewriter } from 'react-simple-typewriter';
+
 import Tilt from 'react-parallax-tilt';
 import profileImg from '../assets/profile.jpg'; // ✅ Replace with your image
 
